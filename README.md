@@ -4,3 +4,4 @@
 * opencv-python
 * face_recognition
 * hiatus
+* requests

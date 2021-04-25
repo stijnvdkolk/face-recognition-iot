@@ -2,7 +2,9 @@ import face_recognition
 import json
 from hiatus import set_timeout, clear_timeout
 import cv2
+import os
 import numpy as np
+import requests
 IMG_W = 1280
 IMG_H = 720
 
@@ -78,7 +80,10 @@ while True:
             timeout_two = set_timeout(noneifyLastKnownPerson, 60.0)
             if lastknownperson != name:
                 lastknownperson = name
-                print(name)
+                message = 'Unknown person in view!'
+                if lastknownperson != 'Unknown':
+                    message = f'{lastknownperson} in view!'
+                requests.post(f'https://push.techulus.com/api/v1/notify/{os.getenv("API_KEY")}?title=Person in view&body={message}')
 
 
     cv2.imshow('Video', frame)
