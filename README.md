@@ -37,6 +37,16 @@ After that follow the following steps:
 9. Start the application
     * `python3 main.py`
 
+## Adding people
+Place a image in the `images` directory and add the following part to `data.json` between the `[]`.
+```json
+{
+  "name": "NAME_HERE",
+  "image": "images/IMAGE_NAME_HERE.IMAGE_EXTENTION_HERE"
+}
+```
+Information about how to format JSON can be found [here](https://www.json.org).
+
 # Improvements that can be made
 1. Remove the `face_recognition` dependency and write something for it myself. Because of limited time, I used this module. I tried building something myself but it took too much time.
 2. Remove the `Push by Techulus` dependency, build something for receiving and sending the notifications myself.
