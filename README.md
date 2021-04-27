@@ -6,6 +6,9 @@ For a long long long time I wanted to built an IoT project myself. After some di
 ## IoT Pipeline
 ![Pipeline](./Pipeline.svg)
 
+## Proof
+[Here](./docs/proof.png).
+
 ## Prerequisites
 * Raspberry Pi 4 connected to the internet (you can run this program with each device that can be connected to the internet, run Python and have a USB port)
 * Python 3 with the following modules installed:
