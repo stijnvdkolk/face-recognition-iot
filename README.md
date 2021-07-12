@@ -6,7 +6,7 @@ For a long long long time I wanted to work on an IoT project myself. After some 
 I'm proud that I built a working Face Recognition device in limited time. I would have been even more proud if I had managed to not need modules built by others. But I'm still proud with what I achieved.
 
 ## Goal
-The main goal of the project is to build a face recognition device that I can use to get notified when someone walks into my room. The device should be able to recognize a person in the view of the camera and notify me when someone enters my room. There are various [improvements](#improvements-that-can-be-made) that can be made to the project. The improvements are listed at the bottom of this document.
+The main goal of the project is to build a face recognition device that I can use to get notified when someone walks into my room. The device should be able to recognize a person in the view of the camera and notify me when someone enters my room. There are various [improvements](#potential-improvements) that can be made to the project. The improvements are listed at the bottom of this document.
 
 ## IoT Pipeline
 When movement is detected on the USB Camera, the IoT Device (Raspberry Pi) analyses the image and sends a request to the IoT Middleware (Push by Techulus). The request includes the name of the person or the word `Unknown` when the person is not recognized. The IoT Middleware sends the request to devices where the Push app has been properly installed and configured. A notification will be shown on these devices.
