@@ -29,6 +29,8 @@ with open("data.json") as file:
         known_face_names.append(item['name'])
 
 print(f'Loaded {len(known_face_names)} people!')
+print('Press q if you want to stop the application!')
+
 
 
 face_locations = []
@@ -112,3 +114,4 @@ while True:
 # destroy all shizzle
 video_capture.release()
 cv2.destroyAllWindows()
+
